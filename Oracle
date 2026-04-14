@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Project - Home</title>
+    <style>
+        /* THE STYLING (The Looks) */
+        body {
+            background-color: #e0f7fa; /* Light blue */
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            animation: spinIn 1.2s ease-out;
+        }
+
+        @keyframes spinIn {
+            from { transform: rotate(-10deg) scale(0.5); opacity: 0; }
+            to { transform: rotate(0deg) scale(1); opacity: 1; }
+        }
+
+        .my-button {
+            background-color: purple;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+            margin: 10px;
+        }
+
+        .my-button:hover {
+            background-color: darkviolet;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <h1>Fresh Start</h1>
+        <p>This is the beginning of my new project.</p>
+        
+        <button class="my-button">Explore</button>
+        <button class="my-button">Connect</button>
+    </div>
+
+</body>
+</html>
